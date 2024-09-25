@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordAction</target>
+        <target>lightning__UtilityBar</target>
+    </targets>
+    <!--To use a component as a quick action on a record page, 
+    add lightning__RecordAction as a target in the component's configuration file. 
+    You can also set actionType to ScreenAction or Action to choose the quick action type. -->
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordAction">
+            <actionType>ScreenAction</actionType>
+          </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
